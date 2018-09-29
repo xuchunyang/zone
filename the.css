@@ -1,0 +1,54 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.menu, .buffer, .modeline, .echo-area {
+  white-space: pre;
+  padding-left: 10px;
+}
+
+.menu {
+  z-index: 1;
+  width: 100%;
+  background-color: #BFBFBF;
+}
+
+.modeline {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1;
+  width: 100%;
+  background-color: #BFBFBF;
+}
+
+.echo-area {
+  position: fixed;
+  bottom: 0;
+}
+
+.left-fringe {
+  position: fixed;
+  top: 0;
+  left: 2px;
+  width: 8px;
+  height: 100vh;
+  background-color: #F2F2F2;
+  z-index: -1;
+}
+
+.right-fringe {
+  position: fixed;
+  top: 0;
+  right: 2px;
+  width: 8px;
+  height: 100vh;
+  background-color: #F2F2F2;
+  z-index: -1;
+}
